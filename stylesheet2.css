@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Amsterdam1;
+    src: url(Amsterdam\ 400.ttf);
+}
+@font-face {
+    font-family: Amsterdam2;
+    src: url(Amsterdam\ Four_ttf\ 400.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 72%;
+    margin: 0 auto;
+}
+.mainhead{
+    background-image: linear-gradient(rgba(248, 243, 237, 0.7),rgba(248, 243, 237, 0.7)), url(Homepage\ Template\ 1.png);
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.pagetabs{
+    margin: auto 0 ;
+}
+.pagetabs ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+   
+}
+
+.pagetabs ul li a{
+    color: rgba(51,46,46);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.pagetabs ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: white;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+.pagetabs ul li:hover::after{
+    width: 100%;
+}
+.Aboutheader h1{
+  text-align: center;
+  padding: 20px;
+  font-family: Amsterdam2;
+  font-size: 50px;
+}
+.Aboutheader {
+    display: flex;
+    flex-direction: column;
+}
+.aboutrow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ .aboutrow p{
+    padding: 20px;
+    font-size: 20px;
+    font-family: Maven Pro; 
+    line-height: 40px;
+    text-align: left;
+    padding-top: 23px;
+
+ }
+
+
+ /* Gallery Functionality */
+ .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(248, 243, 237);
+    margin-top: 30px;
+    margin-bottom: 40px;
+ }
+ .pictureGalleryComponent {
+    width: 28%;
+    font-size: 20px;
+    font-family: Maven Pro;
+ }
+ .pictureGalleryComponent img {
+    width: 100%;
+    padding-top: 10px;
+ }
+ .pictureGalleryComponent h1 {
+    text-align: center;
+ }
+ .firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Footer Section */
+
+footer{
+    display:flex;
+    flex-direction: row;
+    margin: auto 0;
+    padding: 10px;
+    background-color:rgba(248, 243, 237);
+    padding-top: 30px;
+    
+}
+footer img{
+    width: 150px;
+}
+.contactinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 25px;
+    margin:  auto 0;
+
+}
+.contactinfo h1{
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+}
+.contactinfo p{
+    font-size: 15px;
+    font-family: Maven Pro;
+}

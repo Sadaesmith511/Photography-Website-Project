@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Amsterdam1;
+    src: url(Amsterdam\ 400.ttf);
+}
+@font-face {
+    font-family: Amsterdam2;
+    src: url(Amsterdam\ Four_ttf\ 400.ttf);
+}
+/* Styling for Homepage */
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainhead{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(248, 243, 237, 0.7),rgba(248, 243, 237, 0.7)), url(Homepage\ Template\ 1.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.pagetabs{
+    margin: auto 0 ;
+}
+.pagetabs ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+   
+}
+
+.pagetabs ul li a{
+    color: rgba(51,46,46);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.pagetabs ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: white;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+.pagetabs ul li:hover::after{
+    width: 100%;
+}
+.Hompagetxt{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.Hompagetxt h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Amsterdam2;
+    color: rgba(51,46,46);
+    font-size: 100px;
+}
+.Hompagetxt p{
+    margin: 10px 0 60px;
+    font-size: 30px;
+    color: rgba(51,46,46);
+    font-family: Maven Pro;
+}
+.Hometab{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(51,46,46);
+    border: 4px solid rgba(51,46,46);
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.Hometab:hover{
+    border: 4px solid white;
+    background:white;
+    transition: 0.25s;
+}
+.GetToKnowMe{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.GetToKnowMe h1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+}
+
+.GetToKnowMe h1::after{
+    content: "";
+    display: block;
+    width: 15em;
+    max-width: 70%;
+    border-bottom: 0.2em solid rgba(248, 243, 237);
+    margin: 1em auto 0;
+}
+.GetToKnowMe p{
+    color: rgba(51,46,46);
+    font-weight: 300;
+    line-height: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    font-family: Maven Pro;
+}
+.GetToKnowMe img{
+    width:500px;
+}
+.HompageLogos img{
+    display: inline-flex;
+    flex-direction: column;
+    width: 75px;
+    padding: 10px;
+    padding-top: 25px;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    margin: auto 0;
+    padding: 20px;
+    background-color:rgba(248, 243, 237);
+    
+}
+footer img{
+    width: 150px;
+}
+.contactinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 25px;
+    margin:  auto 0;
+
+}
+.contactinfo h1{
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+}
+.contactinfo p{
+    font-size: 15px;
+    font-family: Maven Pro;
+}
